@@ -49,16 +49,4 @@ export ANDROID_HOME="$HOME/Android/Sdk"
 ./gradlew assembleDebug
 ```
 
-## JNI API
 
-| Метод | Возвращает | Описание |
-|---|---|---|
-| `loadImage(byte[])` | `long` | Загрузить изображение, вернуть handle |
-| `getWidth(long)` / `getHeight(long)` | `int` | Размеры изображения |
-| `fillBitmap(long, Bitmap)` | `int` | Записать RGBA напрямую в Bitmap (zero-copy) |
-| `extractBitPlane(long, channel, bit)` | `byte[]` | Битовая плоскость в градациях серого (0 или 255) |
-| `freeImage(long)` | `void` | Освободить изображение из кэша |
-
-## Лицензия
-
-MIT

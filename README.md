@@ -49,16 +49,4 @@ export ANDROID_HOME="$HOME/Android/Sdk"
 ./gradlew assembleDebug
 ```
 
-## JNI API
 
-| Method | Returns | Description |
-|---|---|---|
-| `loadImage(byte[])` | `long` | Decode image, returns handle |
-| `getWidth(long)` / `getHeight(long)` | `int` | Image dimensions |
-| `fillBitmap(long, Bitmap)` | `int` | Write RGBA directly into Bitmap pixels (zero-copy) |
-| `extractBitPlane(long, channel, bit)` | `byte[]` | Grayscale bit plane (0 or 255) |
-| `freeImage(long)` | `void` | Release image from cache |
-
-## License
-
-MIT
