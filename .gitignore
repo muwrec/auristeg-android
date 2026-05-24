@@ -1,0 +1,10 @@
+/target/
+/rust/target/
+/app/build/
+/app/src/main/jniLibs/
+/.gradle/
+/gradlew
+/gradle/wrapper/gradle-wrapper.jar
+*.swp
+*.swo
+.DS_Store
